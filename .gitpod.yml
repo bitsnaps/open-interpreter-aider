@@ -1,0 +1,11 @@
+image:
+    file: .gitpod.Dockerfile
+
+tasks:
+  - init: pip install aider-chat open-interpreter
+    command: |
+          aider -h
+          ctags --version
+          interpreter --version
+
+
