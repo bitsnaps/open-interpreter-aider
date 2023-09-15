@@ -10,6 +10,8 @@ tasks:
   - init: |
       pip install aider-chat
       pip install open-interpreter
+      sudo chmod +x space_login.sh
+      ./space_login.sh
     command: |
           aider -h
           ctags --version

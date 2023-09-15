@@ -13,3 +13,6 @@ Don't forget to set your API:
 ```bash
 export OPENAI_API_KEY="your_api_key"
 ```
+
+## Deta space
+You can use [Deta](https://deta.space/) to push your code online, it's already configured using `DETA_PROJECT_KEY` variable environnement which you need to provide in your [Gitpod's](https://www.gitpod.io/docs/configure/projects/environment-variables) configuration, read more about [Deta](https://deta.space/docs) here.

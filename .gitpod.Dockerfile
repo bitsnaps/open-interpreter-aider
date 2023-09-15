@@ -14,6 +14,9 @@ RUN sudo apt-get install -yq texlive && \
 # Install and configure Deta Space
 RUN curl -fsSL https://get.deta.dev/space-cli.sh | sh
 
+# Install system tools
+RUN sudo apt-get install expect -yq
+
 ENV DETA_HOME=/home/gitpod/.detaspace
 
 RUN echo 'export PATH=${DETA_HOME}/bin:$PATH' >>~/.bashrc
