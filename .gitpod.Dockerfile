@@ -5,6 +5,7 @@ RUN sudo apt-get update && sudo apt-get install universal-ctags -yq
 
 # LaTeX dependency for nbconvert
 RUN sudo apt-get install pandoc -yq
+
 # This package has everything, but it's quite heavy (~2.5Gb)
 RUN sudo apt-get install texlive-full -yq
 #RUN sudo apt-get install texlive texlive-xetex texlive-latex-extra texlive-fonts-recommended texlive-plain-generic -yq
@@ -17,7 +18,7 @@ RUN sudo apt-get install -yq texlive && \
 RUN curl -fsSL https://get.deta.dev/space-cli.sh | sh
 
 # Install system tools
-RUN sudo apt-get install expect -yq
+RUN sudo add-apt-repository universe && sudo apt-get update && sudo apt-get install expect -y
 
 ENV DETA_HOME=/home/gitpod/.detaspace
 
