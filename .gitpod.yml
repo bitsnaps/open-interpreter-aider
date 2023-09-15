@@ -1,6 +1,11 @@
 image:
     file: .gitpod.Dockerfile
 
+ports:
+  - port: 4200
+    visibility: public
+    onOpen: ignore
+
 tasks:
   - init: |
       pip install aider-chat
@@ -10,4 +15,6 @@ tasks:
           ctags --version
           interpreter --version
 
+# Using Deta
+# You can use `space login` and sotre then use your $DETA_PROJECT_KEY variable environnement on Gitpod, it allows you to push your app to Deta space.
 
