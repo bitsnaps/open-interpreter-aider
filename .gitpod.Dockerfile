@@ -16,4 +16,4 @@ RUN curl -fsSL https://get.deta.dev/space-cli.sh | sh
 
 ENV DETA_HOME=/home/gitpod/.detaspace
 
-RUN echo 'export PATH=${DETA_HOME}}/bin:$PATH' >>~/.bashrc
+RUN echo 'export PATH=${DETA_HOME}/bin:$PATH' >>~/.bashrc
